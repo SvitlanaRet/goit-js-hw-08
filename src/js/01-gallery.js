@@ -13,6 +13,7 @@ const renderList = galleryItems.map(({ preview, original, description }) =>
    </a>
 </li>`).join("")
 
+listElement.insertAdjacentHTML("beforeend", renderList)
 
     const lightbox = new SimpleLightbox('.gallery a',  {captionsData: 'alt',
     captionDelay: 250}
@@ -20,6 +21,6 @@ const renderList = galleryItems.map(({ preview, original, description }) =>
 
 
 
-listElement.insertAdjacentHTML("beforeend", renderList)
+
 
 // console.log(galleryItems);
